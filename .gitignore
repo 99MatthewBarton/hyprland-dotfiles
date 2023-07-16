@@ -1,14 +1,17 @@
-# Ignore nor all files
-*
+# Ignore all files
+/*
 
-# Except
+# Except these directories
 !.gitignore
-!bottom/
-!dunst/
-!fish/
-!hypr/
-!kitty/
-!neofetch/
-!ranger/
-!rofi/
-!waybar/
+!/bottom
+!/dunst
+!/fish
+!/hypr
+!/kitty
+!/neofetch
+!/ranger
+!/waybar
+
+# Don't include specific files
+/waybar/style_old.css
+/waybar/config_old

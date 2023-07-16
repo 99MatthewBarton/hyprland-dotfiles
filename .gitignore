@@ -1,0 +1,14 @@
+# Ignore nor all files
+*
+
+# Except
+!.gitignore
+!bottom/
+!dunst/
+!fish/
+!hypr/
+!kitty/
+!neofetch/
+!ranger/
+!rofi/
+!waybar/

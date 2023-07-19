@@ -15,7 +15,7 @@
 	},
 
 	"hyprland/window": {
-		"format": "{}",
+		"format": "{title}",
 		"separate-outputs": true
 	},
 	

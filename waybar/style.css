@@ -1,6 +1,8 @@
 /*
 based on https://github.com/jakehamilton/dotfiles/
 catppuccin colour scheme from https://github.com/catppuccin/waybar
+TODO: make icons look better
+hide Hyprland window when empty
 */
 
 @import "macchiato.css";
@@ -8,13 +10,14 @@ catppuccin colour scheme from https://github.com/catppuccin/waybar
 * {
 	border: none;
 	border-radius: 0;
-	font-family: Nerd Font Hack;
+	font-family: Jet Brains Mono;
 	font-size: 14px;
 	min-height: 20px;
 }
 
 window#waybar {
 	background: transparent;
+  margin: 0 20px 0 20px;
 }
 
 window#waybar.hidden {
@@ -34,6 +37,7 @@ button:hover {
 }
 
 #workspaces {
+	font-size: 34px;
 	margin-top: 12px;
 	margin-left: 20px;
 	margin-bottom: 0px;
@@ -46,13 +50,11 @@ button:hover {
 	transition: none;
 	color: @text;
 	background: transparent;
-	font-size: 14px;
 }
 
 #workspaces button.active {
 	color: @mauve;
 }
-
 
 #window {
     margin-top: 12px;
@@ -68,6 +70,15 @@ button:hover {
 	background: transparent;
 }
 
+#tray {
+	margin-top: 12px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+  	background: @base;
+}
+
 #network {
 	margin-top: 12px;
 	margin-left: 8px;
@@ -79,13 +90,13 @@ button:hover {
 }
 
 #pulseaudio {
+	color: @text;
+	background: @base;
 	margin-top: 12px;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
-	color: @text;
-	background: @base;
 }
 
 #pulseaudio.muted {
@@ -112,13 +123,4 @@ button:hover {
 	border-radius: 10px;
 	color: @text;
 	background: @base;
-}
-
-#tray {
-	margin-top: 12px;
-	margin-left: 8px;
-	margin-right: 12px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 10px;
 }

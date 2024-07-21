@@ -15,4 +15,4 @@
 # Don't include specific files
 /waybar/style_old.css
 /waybar/config_old
-fish/fish_variables
+/fish/fish_variables
